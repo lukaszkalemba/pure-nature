@@ -11,7 +11,13 @@
 <body>
 
   <header class="header">
-    <img src="<?php bloginfo( 'template_url' );?>/src/img/mobile-logo.svg" alt="Pure Nature logo">
+    <div class="header-container">
+      <img class="header__logo" src="<?php bloginfo( 'template_url' );?>/src/img/mobile-logo.svg" alt="Pure Nature logo">
+
+      <div role="button" class="header__hamburger">
+        Menu<div class="hamburger__line"></div>
+      </div>
+    </div>
 
     <nav class="nav">
       <ul class="nav__list">

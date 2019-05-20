@@ -18,13 +18,16 @@
         Menu<div class="hamburger__line"></div>
       </div>
     </div>
+  </header>
 
-    <nav class="nav">
+  
+  <nav class="nav">
       <?php wp_nav_menu( array(
         'theme_location' => 'main_nav',
         'container' => 'false',
         'menu_class' => 'nav__list',
-      ) ); ?>
+        ) ); ?>
+
+        <p class="nav__phone-number">Tel. +48 556 323 444</p>
     </nav>
-  </header>
 

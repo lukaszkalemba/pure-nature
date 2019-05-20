@@ -7,4 +7,16 @@
 
   add_action('wp_enqueue_scripts', 'link_styles_and_scripts');
 
+
+
+  function register_main_nav() {
+    register_nav_menus(
+      array(
+        'main_nav' => __( 'Główna nawigacja' ),
+      )
+    );
+  }
+
+  add_action( 'init', 'register_main_nav' );
+
 ?>

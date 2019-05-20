@@ -21,10 +21,15 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">O firmie</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Oferta</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Cennik</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'main_nav'
+        ) ); ?>
       </ul>
+
+      <!-- <li class="nav__item"><a class="nav__link" href="#">O firmie</a></li> -->
+      <!-- <li class="nav__item"><a class="nav__link" href="#">Oferta</a></li> -->
+      <!-- <li class="nav__item"><a class="nav__link" href="#">Cennik</a></li> -->
+      <!-- <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>  -->
     </nav>
   </header>
+

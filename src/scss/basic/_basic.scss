@@ -4,6 +4,7 @@ html {
 
 body {
   color: $dark;
+  font-family: 'Montserrat', sans-serif;
 
   &.-js-nav-is-open {
     overflow: hidden;

@@ -19,4 +19,14 @@
 
   add_action( 'init', 'register_main_nav' );
 
+
+  function add_main_nav_item_classes($classes, $item, $args) {
+    if($args->theme_location == 'main_nav') {
+      $classes[] = 'nav__item';
+    }
+    return $classes;
+  }
+  add_filter('nav_menu_css_class', 'add_main_nav_item_classes', 1, 3);
+
+
 ?>

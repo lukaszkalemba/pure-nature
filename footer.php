@@ -12,16 +12,16 @@
   <p class="footer__paragraph">Mail: salon@purenature.pl</p>
 
   <h2 class="footer__title">Bądź na bieżąco</h2>
-  
-  <a class="footer__social-icon" href="#">facebook</a>  
-  <a class="footer__social-icon" href="#">instagram</a>  
-  <a class="footer__social-icon" href="#">youtube</a>  
+
+  <a class="footer__social-icon" href="#">facebook</a>
+  <a class="footer__social-icon" href="#">instagram</a>
+  <a class="footer__social-icon" href="#">youtube</a>
   <a class="footer__social-icon" href="#">twitter</a>
 
   <div class="footer__copyright">
   <p class="footer__paragraph">&copy; 2019 - Pure Nature</p>
   <p class="footer__paragraph"><span class="footer__paragraph--lead">Projekt i realizacja: Bracia Konieczni</span></p>
-  </div>  
+  </div>
 
 </footer>
 

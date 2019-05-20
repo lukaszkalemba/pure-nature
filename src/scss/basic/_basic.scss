@@ -1,7 +1,7 @@
 body {
   color: $dark;
-}
 
-.-js-nav-is-open {
-  overflow: hidden;
+  &.-js-nav-is-open {
+    overflow: hidden;
+  }
 }

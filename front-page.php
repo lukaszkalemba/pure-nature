@@ -42,4 +42,9 @@
   </div>
 </div>
 
+
+<section class="offer">
+  <h2 class="section__title">Oferta</h2>
+</section>
+
 <?php get_footer(); ?>

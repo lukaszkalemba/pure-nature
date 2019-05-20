@@ -6,7 +6,11 @@ let cleanCSS = require('gulp-clean-css');
 
 gulp.task('scss', function() {
   return gulp
-    .src(['node_modules/bootstrap/scss/bootstrap.scss', './src/scss/**/*.scss'])
+    .src([
+      'node_modules/bootstrap/scss/bootstrap.scss',
+      './src/scss/fontawesome/*.scss',
+      './src/scss/*.scss'
+    ])
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(concat('main.min.css'))

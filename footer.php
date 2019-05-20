@@ -7,20 +7,20 @@
   <a class="footer__link" href="#">Czytaj dalej...</a>
 
   <h2 class="footer__title">Szybki kontakt</h2>
-  <p class="footer__paragraph footer__paragraph--lead">Tel. +48 763 332 333</p>
-  <p class="footer__paragraph">Tel. +48 763 332 333</p>
+  <p class="footer__paragraph footer__paragraph--lead">ul. Warszawska 16a,<br> 98-100 Łask</p>
+  <p class="footer__paragraph footer__paragraph--phone-number">Tel. +48 763 332 333</p>
   <p class="footer__paragraph">Mail: salon@purenature.pl</p>
 
   <h2 class="footer__title">Bądź na bieżąco</h2>
 
-  <a class="footer__social-icon" href="#">facebook</a>
-  <a class="footer__social-icon" href="#">instagram</a>
-  <a class="footer__social-icon" href="#">youtube</a>
-  <a class="footer__social-icon" href="#">twitter</a>
+  <a class="footer__social-icon" href="#"><i class="fab fa-facebook-square"></i></a>
+  <a class="footer__social-icon" href="#"><i class="fab fa-instagram"></i></a>
+  <a class="footer__social-icon" href="#"><i class="fab fa-youtube"></i></a>
+  <a class="footer__social-icon" href="#"><i class="fab fa-twitter"></i></a>
 
   <div class="footer__copyright">
   <p class="footer__paragraph">&copy; 2019 - Pure Nature</p>
-  <p class="footer__paragraph"><span class="footer__paragraph--lead">Projekt i realizacja: Bracia Konieczni</span></p>
+  <p class="footer__paragraph">Projekt i realizacja: <span class="footer__paragraph--lead">Bracia Konieczni</span></p>
   </div>
 
 </footer>

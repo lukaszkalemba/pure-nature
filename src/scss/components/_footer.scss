@@ -1,3 +1,55 @@
 .footer {
   transform: translateY(15vh);
+  background-color: $dark;
+  color: $white;
+  padding: 0 1.5em;
+}
+
+.footer__title {
+  color: $pink;
+  font-size: 2.2rem;
+  padding: 1.5em 0 0.75em 0;
+  margin: 0;
+}
+
+.footer__paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+.footer__paragraph--lead {
+  font-weight: 600;
+}
+
+.footer__paragraph--phone-number {
+  margin: 0;
+}
+
+.footer__link {
+  color: $gold;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+  margin-top: 1.25em;
+}
+
+.footer__social-icon {
+  font-size: 2.2rem;
+  margin-right: 0.4em;
+}
+
+.footer__copyright {
+  padding: 1.25em 0;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 97%;
+    height: 1px;
+    background-color: $dark-accent;
+    margin: 1.25em 0;
+    align-self: center;
+  }
 }

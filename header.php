@@ -12,7 +12,9 @@
 
   <header class="header">
     <div class="header-container">
-      <img class="header__logo" src="<?php bloginfo( 'template_url' );?>/src/img/mobile-logo.svg" alt="Pure Nature logo">
+      <a href="<?php the_permalink("285"); ?>">
+        <img class="header__logo" src="<?php bloginfo( 'template_url' );?>/src/img/mobile-logo.svg" alt="Pure Nature logo">
+      </a>
 
       <div role="button" class="header__hamburger">
         Menu<div class="hamburger__line"></div>

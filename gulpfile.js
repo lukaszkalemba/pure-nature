@@ -32,12 +32,17 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('images', function() {
+  return gulp.src('src/img/**/*').pipe(gulp.dest('dist/img'));
+});
+
 gulp.task(
   'watch',
   gulp.series(['scss', 'js'], function() {
     gulp.watch('./src/scss/**/*.scss', gulp.series(['scss']));
     gulp.watch('./src/js/**/*.js', gulp.series(['js']));
+    gulp.watch('./src/img/**/*', gulp.series(['images']));
   })
 );
 
-gulp.task('default', gulp.series(['scss', 'js', 'fonts', 'watch']));
+gulp.task('default', gulp.series(['scss', 'js', 'fonts', 'images', 'watch']));

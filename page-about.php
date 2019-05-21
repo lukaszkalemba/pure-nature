@@ -10,12 +10,15 @@
 
 <img class="about__hero-img" src="<?php bloginfo( 'template_url' );?>/dist/img/offer_hero.png" alt="">
 
-<section class="about-content">
+<section class="section section--about">
 
 <h2 class="section__title">Odkrywamy Twoje naturalne piękno</h2>
 
   <?php while ( have_posts() ) : the_post(); ?>
-    <?php the_content();
+  <div class="about__content">
+    <?php the_content(); ?>
+  </div>
+  <?php
   endwhile;
   wp_reset_query();
   ?>

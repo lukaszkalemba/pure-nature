@@ -6,11 +6,14 @@
   object-position: center;
 }
 
-.about-content {
-  font-size: 1.5rem;
-  padding: 2.4em 1em;
+.section--about {
   line-height: 1.5em;
   text-align: center;
+}
+
+.about__content {
+  font-size: 1.5rem;
+  line-height: 1.5em;
 }
 
 .employees {

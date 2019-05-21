@@ -3,7 +3,7 @@
 }
 
 .carousel__image {
-  min-height: 300px;
+  min-height: 350px;
   object-fit: cover;
 }
 
@@ -37,7 +37,7 @@
   background-color: $dark;
   color: $white;
   transition: 0.3s ease-in-out;
-  margin: 0.75em 0 1.75em 0;
+  margin: 1.75em 0 3.5em 0;
 
   &:hover,
   &:focus {

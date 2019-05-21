@@ -6,9 +6,38 @@
   object-position: center;
 }
 
-.about-container {
+.about-content {
   font-size: 1.5rem;
   padding: 2.4em 1em;
   line-height: 1.5em;
   text-align: center;
+}
+
+.employees {
+  background-color: $pink;
+  font-size: 1.5rem;
+  padding: 2.4em 1em;
+}
+
+.employees__employee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee__first-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $dark;
+  padding: 0.75em 0 0.25em 0;
+  margin: 0;
+}
+
+.employee__workplace {
+  font-style: italic;
+  color: $white;
+  font-size: 1.8rem;
+  padding-bottom: 1.5em;
+  margin: 0;
 }

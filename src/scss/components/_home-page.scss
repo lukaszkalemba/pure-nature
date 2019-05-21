@@ -45,12 +45,22 @@
   }
 }
 
-.section--testimonials {
+.offer-home {
+  @include section;
+}
+
+.offer-home__title {
+  @include section__title;
+}
+
+.testimonials {
+  @include section;
   padding-bottom: 4.5em;
   background-color: $pink;
 }
 
-.section__title--testimonials {
+.testimonials__title {
+  @include section__title;
   text-align: center;
   margin-bottom: 1.5em;
 
@@ -60,7 +70,7 @@
 }
 
 .carousel-indicators--testimonials {
-  margin: 0 0 -2.1em 0;
+  margin-bottom: -2.1em;
 
   .carousel__indiactior--testimonials {
     background-color: transparent;

@@ -9,8 +9,8 @@
 <?php get_header(); ?>
 
 
-<section class="section section--offer">
-  <h2 class="section__title">Nasza oferta</h2>
+<section class="offer">
+  <h2 class="offer__title">Nasza oferta</h2>
 
   <?php
 

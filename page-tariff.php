@@ -8,8 +8,8 @@
 
 <?php get_header(); ?>
 
-  <section class="section section--tariff">
-    <h2 class="section__title">Cennik</h2>
+  <section class="tariff">
+    <h2 class="tariff__title">Cennik</h2>
   </section>
 
 <?php get_footer(); ?>

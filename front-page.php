@@ -71,8 +71,8 @@
 
 
 
-<section class="section">
-  <h2 class="section__title">Oferta</h2>
+<section class="offer-home">
+  <h2 class="offer-home__title">Oferta</h2>
 
   <?php
 
@@ -101,12 +101,12 @@
 
 </section>
 
-<section class="section section--testimonials">
+<section class="testimonials">
 
 <div class="container">
       <div class="row">
         <div class="col-md-8 col-center m-auto">
-          <h2 class="section__title section__title--testimonials">Opinie naszych klientów</h2>
+          <h2 class="testimonials__title">Opinie naszych klientów</h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators carousel-indicators--testimonials">

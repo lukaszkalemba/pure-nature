@@ -10,9 +10,9 @@
 
 <img class="about__hero-img" src="<?php bloginfo( 'template_url' );?>/dist/img/offer_hero.png" alt="">
 
-<section class="section section--about">
+<section class="about">
 
-<h2 class="section__title">Odkrywamy Twoje naturalne piękno</h2>
+<h2 class="about__title">Odkrywamy Twoje naturalne piękno</h2>
 
   <?php while ( have_posts() ) : the_post(); ?>
   <div class="dynamic-content dynamic-content--about">
@@ -26,7 +26,7 @@
 </section>
 
 
-<section class="section section--employees">
+<section class="employees">
 
 <?php
 

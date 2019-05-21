@@ -6,11 +6,17 @@
   object-position: center;
 }
 
-.section--about {
+.about {
+  @include section;
   text-align: center;
 }
 
-.section--employees {
+.about__title {
+  @include section__title;
+}
+
+.employees {
+  @include section;
   background-color: $pink;
 }
 

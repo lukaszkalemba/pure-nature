@@ -1,12 +1,14 @@
-.section--offer {
-  padding: 18vh 0 1.75em 0;
+.offer {
+  padding-top: 18vh;
+  padding-bottom: 1.75em;
 }
 
 .offer-content-container {
-  padding: 0 1em 1.75em 1em;
+  padding: 0 2em 1.75em 2em;
 }
 
-.section__title--offer {
+.offer__title {
+  @include section__title;
   align-items: flex-start;
 }
 
@@ -21,13 +23,15 @@
   font-size: 1.8rem;
 }
 
-.secion--pros-and-cons {
+.pros-and-cons {
+  @include section;
   font-size: 1rem;
   background-color: $pink;
   padding: 0 2em 3.5em 2em;
 }
 
-.section__title--pros-and-cons {
+.pros-and-cons__title {
+  @include section__title;
   padding: 1.4em 0 0.75em 0;
   margin: 0;
   align-items: flex-start;

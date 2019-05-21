@@ -22,6 +22,8 @@
 
       <p><?php the_sub_field('cena'); ?></p>
 
+      <a class="post__link" href="<?php the_permalink("282"); ?>">Skontaktuj się z nami</a>
+
     </section>
 
     <?php

@@ -101,4 +101,73 @@
 
 </section>
 
+<section class="section section--testimonials">
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-8 col-center m-auto">
+          <h2 class="section__title section__title--testimonials">Opinie naszych klientów</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators carousel-indicators--testimonials">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="carousel__indiactior carousel__indiactior--testimonials active"
+              ></li>
+              <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="1"></li>
+              <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <p class="testimonials__overview">Anna Kowalska</p>
+                <p class="testimonials__paragraph">
+                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
+                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
+                  Makijaż oraz paznokcie zostały wykonane na najwyższym
+                  poziomie. Salon Pure Nature to najlepszy wybór.
+                </p>
+              </div>
+              <div class="item carousel-item">
+                <p class="testimonials__overview">Anna Kowalska</p>
+                <p class="testimonials__paragraph">
+                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
+                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
+                  Makijaż oraz paznokcie zostały wykonane na najwyższym
+                  poziomie. Salon Pure Nature to najlepszy wybór.
+                </p>
+              </div>
+              <div class="item carousel-item">
+                <p class="testimonials__overview">Anna Kowalska</p>
+                <p class="testimonials__paragraph">
+                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
+                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
+                  Makijaż oraz paznokcie zostały wykonane na najwyższym
+                  poziomie. Salon Pure Nature to najlepszy wybór.
+                </p>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a
+              class="carousel-control left carousel-control-prev"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <i class="carousel__angle--testimonials fa fa-angle-left"></i>
+            </a>
+            <a
+              class="carousel-control right carousel-control-next"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <i class="carousel__angle--testimonials fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
 <?php get_footer(); ?>

@@ -12,6 +12,8 @@
 
 <section class="about-container">
 
+<h2 class="section__title">Odkrywamy Twoje naturalne piękno</h2>
+
   <?php while ( have_posts() ) : the_post(); ?>
     <?php the_content();
   endwhile;

@@ -26,7 +26,7 @@
 </section>
 
 
-<section class="employees">
+<section class="section section--employees">
 
 <?php
 

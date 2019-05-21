@@ -30,4 +30,7 @@
   add_filter('nav_menu_css_class', 'add_main_nav_item_classes', 1, 3);
 
 
+
+  add_theme_support('post-thumbnails');
+
 ?>

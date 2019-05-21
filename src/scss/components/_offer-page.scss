@@ -1,0 +1,23 @@
+.section--offer {
+  padding: 15vh 0 0 0;
+}
+
+.offer-content-container {
+  padding: 0 1em 1.75em 1em;
+}
+
+.section__title--offer {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.offer__img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 300px;
+  margin: 1.5em 0 2em 0;
+}
+
+.offer__content {
+  font-size: 1.8rem;
+}

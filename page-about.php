@@ -15,7 +15,7 @@
 <h2 class="section__title">Odkrywamy Twoje naturalne piękno</h2>
 
   <?php while ( have_posts() ) : the_post(); ?>
-  <div class="about__content">
+  <div class="dynamic-content dynamic-content--about">
     <?php the_content(); ?>
   </div>
   <?php

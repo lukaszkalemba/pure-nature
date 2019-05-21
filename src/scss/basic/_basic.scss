@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
 
   &::after {
     content: '';
@@ -33,4 +33,10 @@ body {
     background-color: $pink;
     margin-top: 1em;
   }
+}
+
+.dynamic-content {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  line-height: 1.5em;
 }

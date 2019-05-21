@@ -8,7 +8,6 @@
 
 .section__title--offer {
   align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .offer__img {
@@ -20,4 +19,26 @@
 
 .offer__content {
   font-size: 1.8rem;
+}
+
+.secion--pros-and-cons {
+  font-size: 1rem;
+  background-color: $pink;
+  padding: 0 2em 3.5em 2em;
+}
+
+.section__title--pros-and-cons {
+  padding: 1.4em 0 0.75em 0;
+  margin: 0;
+  align-items: flex-start;
+
+  &::after {
+    background-color: $white;
+  }
+}
+
+.pros-and-cons__paragraph {
+  font-size: 1.8rem;
+  margin: 0.25em;
+  font-weight: 700;
 }

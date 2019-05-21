@@ -71,7 +71,7 @@
 
 
 
-<section class="offer">
+<section class="section section--offer">
   <h2 class="section__title">Oferta</h2>
 </section>
 

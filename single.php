@@ -18,7 +18,7 @@
 
         <h2 class="offer__title">Cena</h2>
 
-        <p><?php the_field('cena'); ?></p>
+        <p class="offer__price"><?php the_field('cena'); ?></p>
 
         <a class="post__link" href="<?php the_permalink("282"); ?>">Skontaktuj się z nami</a>
 

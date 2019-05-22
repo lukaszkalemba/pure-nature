@@ -12,6 +12,13 @@
   align-items: flex-start;
 }
 
+.offer__price {
+  color: $gold;
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-bottom: 0.5em;
+}
+
 .offer__img {
   width: 100%;
   object-fit: cover;

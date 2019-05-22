@@ -10,13 +10,13 @@
     <section class="offer">
       <img class="offer__img" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
       <div class="offer-content-container">
-        <h2 class="offer__title"><?php the_title(); ?></h2>
+        <h2 class="offer__title offer__title--post"><?php the_title(); ?></h2>
 
         <div class="dynamic-content dynamic-content--offer">
           <?php the_content(); ?>
         </div>
 
-        <h2 class="offer__title">Cena</h2>
+        <h2 class="offer__title offer__title--post">Cena</h2>
 
         <p class="offer__price"><?php the_field('cena'); ?></p>
 

@@ -9,6 +9,9 @@
 
 .offer__title {
   @include section__title;
+}
+
+.offer__title--post {
   align-items: flex-start;
 }
 

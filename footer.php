@@ -7,9 +7,12 @@
   <a class="footer__link" href="<?php the_permalink("278"); ?>">Czytaj dalej...</a>
 
   <h2 class="footer__title">Szybki kontakt</h2>
-  <p class="footer__paragraph footer__paragraph--lead">ul. Warszawska 16a,<br> 98-100 Łask</p>
-  <p class="footer__paragraph footer__paragraph--phone-number">Tel. +48 763 332 333</p>
-  <p class="footer__paragraph">Mail: salon@purenature.pl</p>
+
+
+  <p class="footer__paragraph footer__paragraph--lead"><?php the_field('ulica'); ?>,</p>
+  <p class="footer__paragraph footer__paragraph--lead"><?php the_field('kod_pocztowy_i_miejscowosc'); ?></p>
+  <p class="footer__paragraph footer__paragraph--phone-number">Tel. +48 <?php the_field('numer_telefonu'); ?></p>
+  <p class="footer__paragraph">Mail: <?php the_field('adres_e-mail'); ?></p>
 
   <h2 class="footer__title">Bądź na bieżąco</h2>
 

@@ -30,6 +30,6 @@
         'menu_class' => 'nav__list',
         ) ); ?>
 
-        <p class="nav__phone-number">Tel. +48 556 323 444</p>
+        <p class="nav__phone-number">Tel. +48 <?php the_field('numer_telefonu', 282 ); ?></p>
     </nav>
 

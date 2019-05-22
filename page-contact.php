@@ -36,7 +36,7 @@
 
         <div class="contact__subsection">
           <p class="contact__paragraph contact__paragraph--lead"><?php the_sub_field('imie_pracownika'); ?></p>
-          <p class="contact__paragraph"><?php the_sub_field('numer_telefonu_pracownika'); ?></p>
+          <p class="contact__paragraph">Tel. +48 <?php the_sub_field('numer_telefonu_pracownika'); ?></p>
         </div>
     <?php
         endwhile;

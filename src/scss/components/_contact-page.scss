@@ -33,3 +33,11 @@
 .contact__subsection {
   margin-top: 1em;
 }
+
+.socials__icons-container {
+  padding-top: 0.75em;
+}
+
+.socials__icon {
+  @extend .footer__social-icon;
+}

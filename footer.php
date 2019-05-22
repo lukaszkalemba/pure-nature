@@ -13,10 +13,18 @@
 
   <h2 class="footer__title">Bądź na bieżąco</h2>
 
-  <a class="footer__social-icon" href="#"><i class="fab fa-facebook-square"></i></a>
-  <a class="footer__social-icon" href="#"><i class="fab fa-instagram"></i></a>
-  <a class="footer__social-icon" href="#"><i class="fab fa-youtube"></i></a>
-  <a class="footer__social-icon" href="#"><i class="fab fa-twitter"></i></a>
+  <?php
+
+    if( have_rows('ikonki_mediow_spolecznosciowych') ):
+      while ( have_rows('ikonki_mediow_spolecznosciowych') ) : the_row(); ?>
+
+      <a class="footer__social-icon" href="<?php the_sub_field('adres_danego_medium'); ?>"><?php the_sub_field('ikonka_danego_medium'); ?></a>
+    <?php
+      endwhile;
+    else :
+    endif;
+
+  ?>
 
   <div class="footer__copyright">
   <p class="footer__paragraph">&copy; 2019 - Pure Nature</p>

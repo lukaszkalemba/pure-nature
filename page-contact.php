@@ -49,5 +49,21 @@
 
   <section class="socials">
     <h3 class="socials__title">Bądź na bieżąco</h3>
+
+    <div class="socials__icons-container">
+      <?php
+
+        if( have_rows('ikonki_mediow_spolecznosciowych') ):
+          while ( have_rows('ikonki_mediow_spolecznosciowych') ) : the_row(); ?>
+
+          <a class="socials__icon" href="<?php the_sub_field('adres_danego_medium'); ?>"><?php the_sub_field('ikonka_danego_medium'); ?></a>
+        <?php
+          endwhile;
+        else :
+        endif;
+
+        ?>
+    </div>
+
   </section>
 <?php get_footer(); ?>

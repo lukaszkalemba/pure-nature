@@ -2,6 +2,10 @@
   padding-top: 15vh;
 }
 
+.contact {
+  @include section;
+}
+
 .contact__title {
   font-size: 2.2rem;
   color: $pink;

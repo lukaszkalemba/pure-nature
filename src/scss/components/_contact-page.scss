@@ -11,3 +11,25 @@
   color: $pink;
   font-weight: 700;
 }
+
+.socials {
+  @include section;
+  padding-top: 0;
+}
+
+.socials__title {
+  @extend .contact__title;
+}
+
+.contact__paragraph {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.contact__paragraph--lead {
+  font-weight: 700;
+}
+
+.contact__subsection {
+  margin-top: 1em;
+}

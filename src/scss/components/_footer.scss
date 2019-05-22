@@ -13,14 +13,16 @@
 
 .footer__paragraph {
   font-size: 1.6rem;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
 
 .footer__paragraph--lead {
+  margin-bottom: 0;
   font-weight: 600;
 }
 
 .footer__paragraph--phone-number {
+  padding-top: 0.5em;
   margin: 0;
 }
 

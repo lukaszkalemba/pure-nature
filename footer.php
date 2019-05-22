@@ -9,19 +9,19 @@
   <h2 class="footer__title">Szybki kontakt</h2>
 
 
-  <p class="footer__paragraph footer__paragraph--lead"><?php the_field('ulica'); ?>,</p>
-  <p class="footer__paragraph footer__paragraph--lead"><?php the_field('kod_pocztowy_i_miejscowosc'); ?></p>
-  <p class="footer__paragraph footer__paragraph--phone-number">Tel. +48 <?php the_field('numer_telefonu'); ?></p>
-  <p class="footer__paragraph">Mail: <?php the_field('adres_e-mail'); ?></p>
+  <p class="footer__paragraph footer__paragraph--lead"><?php the_field( "ulica", 282 );?>,</p>
+  <p class="footer__paragraph footer__paragraph--lead"><?php the_field('kod_pocztowy_i_miejscowosc', 282 ); ?></p>
+  <p class="footer__paragraph footer__paragraph--phone-number">Tel. +48 <?php the_field('numer_telefonu', 282 ); ?></p>
+  <p class="footer__paragraph">Mail: <?php the_field('adres_e-mail', 282); ?></p>
 
   <h2 class="footer__title">Bądź na bieżąco</h2>
 
   <?php
 
-    if( have_rows('ikonki_mediow_spolecznosciowych') ):
-      while ( have_rows('ikonki_mediow_spolecznosciowych') ) : the_row(); ?>
+    if( have_rows('ikonki_mediow_spolecznosciowych', 282) ):
+      while ( have_rows('ikonki_mediow_spolecznosciowych', 282) ) : the_row(); ?>
 
-      <a class="footer__social-icon" href="<?php the_sub_field('adres_danego_medium'); ?>"><?php the_sub_field('ikonka_danego_medium'); ?></a>
+      <a class="footer__social-icon" href="<?php the_sub_field('adres_danego_medium', 282); ?>"><?php the_sub_field('ikonka_danego_medium', 282); ?></a>
     <?php
       endwhile;
     else :

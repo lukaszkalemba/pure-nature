@@ -1,44 +1,44 @@
 .tariff {
   @include section;
   padding-top: 18vh;
-}
 
-.tariff__title {
-  @include section__title;
-}
+  &__title {
+    @include section__title;
+  }
 
-.tariff__offer-title {
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 0.75em;
-  border: 1px solid $light-gray;
-  margin: 0;
-  cursor: pointer;
-  width: 100%;
-  color: $dark;
-  background-color: $white;
+  &__position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 1.4rem;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $light-gray;
+    }
+  }
+
+  &__offer-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.75em;
+    border: 1px solid $light-gray;
+    margin: 0;
+    cursor: pointer;
+    width: 100%;
+    color: $dark;
+    background-color: $white;
+  }
 }
 
 .active-offer {
   background-color: $gold;
   color: $white;
-}
-
-.tariff__position {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-weight: 900;
-  font-size: 1.4rem;
-
-  &::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: $light-gray;
-  }
 }
 
 .nav-item {

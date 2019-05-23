@@ -5,12 +5,50 @@
 .contact {
   @include section;
   padding-bottom: 0;
-}
 
-.contact__title {
-  font-size: 2.2rem;
-  color: $pink;
-  font-weight: 700;
+  &__title {
+    font-size: 2.2rem;
+    color: $pink;
+    font-weight: 700;
+  }
+
+  &__paragraph {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  &__paragraph--lead {
+    font-weight: 700;
+  }
+
+  &__subsection {
+    margin-top: 1em;
+  }
+
+  &-container {
+    @media (min-width: 768px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 945px) {
+      padding: 3em;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &-section {
+    @media (min-width: 1024px) {
+      margin-right: 0.75em;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 5em;
+    }
+  }
 }
 
 .socials {
@@ -19,6 +57,18 @@
 
   @media (min-width: 768px) {
     padding-top: 1.75em;
+  }
+
+  &__title {
+    @extend .contact__title;
+  }
+
+  &__icons-container {
+    padding-top: 0.75em;
+  }
+
+  &__icon {
+    @extend .footer__social-icon;
   }
 }
 
@@ -32,33 +82,6 @@
   }
 }
 
-.socials__title {
-  @extend .contact__title;
-}
-
-.contact__paragraph {
-  margin: 0;
-  font-size: 1.6rem;
-}
-
-.contact__paragraph--lead {
-  font-weight: 700;
-}
-
-.contact__subsection {
-  margin-top: 1em;
-}
-
-.socials__icons-container {
-  padding-top: 0.75em;
-}
-
-.socials__icon {
-  @extend .footer__social-icon;
-}
-
-//map
-
 .map {
   width: 100%;
   height: 500px;
@@ -67,29 +90,4 @@
 
 .info-content {
   color: #999;
-}
-
-.contact-container {
-  @media (min-width: 768px) {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 945px) {
-    padding: 3em;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.contact-section {
-  @media (min-width: 1024px) {
-    margin-right: 0.75em;
-  }
-
-  @media (min-width: 1440px) {
-    margin-right: 5em;
-  }
 }

@@ -13,14 +13,6 @@ hamburgerButton.addEventListener('click', () => {
   document.body.classList.toggle('-js-nav-is-open');
 });
 
-testimonialsItem.classList.add('active');
-
-sliderItem.classList.add('active');
-
-testimonialsIndicator.classList.add('active');
-
-sliderIndicator.classList.add('active');
-
 function initMap() {
   var location = new google.maps.LatLng(51.771543, 19.468313);
 
@@ -108,3 +100,11 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
+testimonialsItem.classList.add('active');
+
+sliderItem.classList.add('active');
+
+testimonialsIndicator.classList.add('active');
+
+sliderIndicator.classList.add('active');

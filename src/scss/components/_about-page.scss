@@ -1,11 +1,3 @@
-.about__hero-img {
-  object-fit: cover;
-  padding-top: 15vh;
-  min-height: 250px;
-  width: 100%;
-  object-position: center;
-}
-
 .about {
   @include section;
   text-align: center;
@@ -14,10 +6,18 @@
     width: 80%;
     margin: 0.75em auto;
   }
-}
 
-.about__title {
-  @include section__title;
+  &__title {
+    @include section__title;
+  }
+
+  &__hero-img {
+    object-fit: cover;
+    padding-top: 15vh;
+    min-height: 250px;
+    width: 100%;
+    object-position: center;
+  }
 }
 
 .employees-list {

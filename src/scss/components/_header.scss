@@ -17,6 +17,10 @@
 
 .header__logo {
   width: 115px;
+
+  @media (min-width: 1024px) {
+    margin-left: 20em;
+  }
 }
 
 .header__hamburger {
@@ -94,13 +98,13 @@
     margin-top: 0;
     height: 15vh;
     transform: translateY(0);
-    width: 58vw;
-    margin-left: 17em;
+    width: 46vw;
+    margin-left: 37em;
     z-index: 101;
   }
 
   @media (min-width: 1300px) {
-    width: 62vw;
+    width: 53vw;
   }
 
   &.active {

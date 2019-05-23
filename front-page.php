@@ -7,8 +7,8 @@
 
       <?php
 
-        if( have_rows('opinia', 285) ):
-            while ( have_rows('opinia', 285) ) : the_row(); ?>
+        if( have_rows('slajd', 285) ):
+            while ( have_rows('slajd', 285) ) : the_row(); ?>
               <li class="carousel__indiactior" data-target="#myCarousel" data-slide-to="1"></li>
             <?php
         endwhile;

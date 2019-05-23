@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<div class="nav-container">
 
   <header class="header">
     <div class="header-container">
@@ -26,14 +25,12 @@
 
 
   <nav class="nav">
-      <?php wp_nav_menu( array(
-        'theme_location' => 'main_nav',
-        'container' => 'false',
-        'menu_class' => 'nav__list',
-        ) ); ?>
+    <?php wp_nav_menu( array(
+      'theme_location' => 'main_nav',
+      'container' => 'false',
+      'menu_class' => 'nav__list',
+      ) ); ?>
 
-        <p class="nav__phone-number">Tel. +48 <?php the_field('numer_telefonu', 282 ); ?></p>
-    </nav>
+    <p class="nav__phone-number">Tel. +48 <?php the_field('numer_telefonu', 282 ); ?></p>
+  </nav>
 
-
-  </div>

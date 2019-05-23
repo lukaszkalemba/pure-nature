@@ -26,29 +26,31 @@
 </section>
 
 
-<section class="employees">
+<section class="employees-list">
 
-<?php
+  <div class="employees-container">
+    <?php
 
-if( have_rows('pracownik') ):
-    while ( have_rows('pracownik') ) : the_row(); ?>
+    if( have_rows('pracownik') ):
+        while ( have_rows('pracownik') ) : the_row(); ?>
 
-    <article class="employees__employee">
+        <article class="employees__employee">
 
-      <?php $image_url = get_sub_field('zdjecie_pracownika')['url']; ?>
-      <img class="employee__img" src="<?php echo $image_url ?>" alt="">
+          <?php $image_url = get_sub_field('zdjecie_pracownika')['url']; ?>
+          <img class="employee__img" src="<?php echo $image_url ?>" alt="">
 
-    <h3 class="employee__first-name"><?php the_sub_field('imie_pracownika'); ?></h3>
-    <p class="employee__workplace"><?php the_sub_field('stanowisko_pracownika'); ?></p>
+        <h3 class="employee__first-name"><?php the_sub_field('imie_pracownika'); ?></h3>
+        <p class="employee__workplace"><?php the_sub_field('stanowisko_pracownika'); ?></p>
 
-    </article>
+        </article>
 
-<?php
-  endwhile;
-else :
-endif;
+    <?php
+      endwhile;
+    else :
+    endif;
 
-?>
+    ?>
+  </div>
 
 </section>
 

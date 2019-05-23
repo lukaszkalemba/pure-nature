@@ -20,4 +20,8 @@
     background-color: $pink;
     margin-top: 0.75em;
   }
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 }

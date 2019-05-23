@@ -12,7 +12,8 @@
 <div class="map"></div>
 
 
-  <section class="contact">
+<div class="contact-container">
+  <section class="contact-section contact">
     <h3 class="contact__title">Dane Kontaktowe</h3>
 
     <div class="contact__subsection">
@@ -29,8 +30,9 @@
       <p class="contact__paragraph">NIP: <?php the_field('nip'); ?></p>
       <p class="contact__paragraph">REGON: <?php the_field('regon'); ?></p>
     </div>
+  </section>
 
-
+  <section class="contact-section employees">
     <?php
 
       if( have_rows('kontakt_z_danym_pracownikiem') ):
@@ -46,10 +48,9 @@
       endif;
 
     ?>
-
   </section>
 
-  <section class="socials">
+  <section class="contact-section socials">
     <h3 class="socials__title">Bądź na bieżąco</h3>
 
     <div class="socials__icons-container">
@@ -68,4 +69,6 @@
     </div>
 
   </section>
+
+</div>
 <?php get_footer(); ?>

@@ -4,6 +4,7 @@
 
 .contact {
   @include section;
+  padding-bottom: 0;
 }
 
 .contact__title {
@@ -15,6 +16,20 @@
 .socials {
   @include section;
   padding-top: 0;
+
+  @media (min-width: 768px) {
+    padding-top: 1.75em;
+  }
+}
+
+.employees {
+  @include section;
+  padding-top: 0;
+  background-color: $white;
+
+  @media (min-width: 768px) {
+    padding-top: 1.75em;
+  }
 }
 
 .socials__title {
@@ -52,4 +67,29 @@
 
 .info-content {
   color: #999;
+}
+
+.contact-container {
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 945px) {
+    padding: 3em;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.contact-section {
+  @media (min-width: 1024px) {
+    margin-right: 0.75em;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 5em;
+  }
 }

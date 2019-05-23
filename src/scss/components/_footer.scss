@@ -79,6 +79,7 @@
 
   @media (min-width: 768px) {
     width: 80%;
+    padding: 2em 0;
   }
 
   @media (min-width: 1024px) {
@@ -94,7 +95,7 @@
 }
 
 .footer-container--desc {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width: 50%;
   }
 }

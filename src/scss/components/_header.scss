@@ -19,7 +19,7 @@
   width: 115px;
 
   @media (min-width: 1024px) {
-    margin-left: 20em;
+    margin-left: 16em;
   }
 }
 
@@ -99,7 +99,7 @@
     height: 15vh;
     transform: translateY(0);
     width: 46vw;
-    margin-left: 37em;
+    margin-left: 32em;
     z-index: 101;
   }
 
@@ -141,6 +141,10 @@
   @media (min-width: 1024px) {
     font-size: 1.5rem;
     margin-right: 6em;
+  }
+
+  &:last-of-type {
+    margin-right: 0em;
   }
 }
 

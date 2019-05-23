@@ -14,39 +14,27 @@
 
 
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="<?php bloginfo( 'template_url' );?>/dist/img/hero.png"
-          class="carousel__image d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-md-block">
-          <h5 class="carousel__title">Odkryj swoje prawdziwe piękno</h5>
-          <a role="button" href="<?php the_permalink("280"); ?>" class="carousel__action-link">Dowiedz się więcej</a>
+      <?php
+  
+        if( have_rows('slajd', 285) ):
+            while ( have_rows('slajd', 285) ) : the_row(); ?>
+            <div class="carousel-item carousel-item--offer">
+              <img
+                <?php $image_url = get_sub_field('tlo_slajdu')['url']; ?>
+                src="<?php echo $image_url ?>"
+                class="carousel__image d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5 class="carousel__title"><?php the_sub_field('tresc_naglowka', 285); ?></h5>
+                <a role="button" href="<?php the_sub_field('adres_przycisku', 285); ?>" class="carousel__action-link"><?php the_sub_field('tresc_przycisku', 285); ?></a>
+              </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="<?php bloginfo( 'template_url' );?>/dist/img/hero.png"
-          class="carousel__image d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-md-block">
-          <h5 class="carousel__title">Odkryj swoje prawdziwe piękno</h5>
-          <a role="button" href="<?php the_permalink("280"); ?>" class="carousel__action-link">Dowiedz się więcej</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="<?php bloginfo( 'template_url' );?>/dist/img/hero.png"
-          class="carousel__image d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption d-md-block">
-          <h5 class="carousel__title">Odkryj swoje prawdziwe piękno</h5>
-          <a role="button" href="<?php the_permalink("280"); ?>" class="carousel__action-link">Dowiedz się więcej</a>
-        </div>
-      </div>
+        <?php
+              endwhile;
+            else :
+            endif;
+            ?>
     </div>
     <a
       class="carousel-control-prev"
@@ -114,6 +102,8 @@
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators carousel-indicators--testimonials">
+
+            
               <li
                 data-target="#myCarousel"
                 data-slide-to="0"
@@ -122,37 +112,31 @@
               <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="1"></li>
               <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-              <div class="item carousel-item active">
-                <p class="testimonials__overview">Anna Kowalska</p>
+
+
+
+        <div class="carousel-inner">
+        <?php
+
+          if( have_rows('opinia', 285) ):
+              while ( have_rows('opinia', 285) ) : the_row(); ?>
+
+              <div class="item carousel-item carousel-item--testimonials">
+                <p class="testimonials__overview"><?php the_sub_field('autor_opinii', 285); ?></p>
                 <p class="testimonials__paragraph">
-                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
-                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
-                  Makijaż oraz paznokcie zostały wykonane na najwyższym
-                  poziomie. Salon Pure Nature to najlepszy wybór.
+                <?php the_sub_field('tresc_opinii', 285); ?>
                 </p>
               </div>
-              <div class="item carousel-item">
-                <p class="testimonials__overview">Anna Kowalska</p>
-                <p class="testimonials__paragraph">
-                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
-                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
-                  Makijaż oraz paznokcie zostały wykonane na najwyższym
-                  poziomie. Salon Pure Nature to najlepszy wybór.
-                </p>
-              </div>
-              <div class="item carousel-item">
-                <p class="testimonials__overview">Anna Kowalska</p>
-                <p class="testimonials__paragraph">
-                  Z całego serca polecam salon Pure Nature. Wysoka jakość,
-                  przystępna cena oraz świetna atmosfera podczas każdej wizyty.
-                  Makijaż oraz paznokcie zostały wykonane na najwyższym
-                  poziomie. Salon Pure Nature to najlepszy wybór.
-                </p>
-              </div>
-            </div>
-            <!-- Carousel controls -->
+
+              <?php
+        endwhile;
+      else :
+      endif;
+
+      ?>
+      </div>
+
+      
             <a
               class="carousel-control left carousel-control-prev"
               href="#myCarousel"
@@ -170,7 +154,7 @@
           </div>
         </div>
       </div>
-    </div>
+</div>
 
 </section>
 

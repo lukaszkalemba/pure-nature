@@ -1,5 +1,5 @@
 const hamburgerButton = document.querySelector('.header__hamburger');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.navigation');
 
 hamburgerButton.addEventListener('click', () => {
   hamburgerButton.classList.toggle('active');
@@ -94,3 +94,11 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
+const testimonialsItem = document.querySelector('.carousel-item--testimonials');
+
+testimonialsItem.classList.add('active');
+
+const sliderItem = document.querySelector('.carousel-item--offer');
+
+sliderItem.classList.add('active');

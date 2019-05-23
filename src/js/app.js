@@ -1,11 +1,25 @@
 const hamburgerButton = document.querySelector('.header__hamburger');
 const nav = document.querySelector('.nav');
+const testimonialsItem = document.querySelector('.carousel-item--testimonials');
+const sliderItem = document.querySelector('.carousel-item--offer');
+const testimonialsIndicator = document.querySelector(
+  '.carousel__indiactior--testimonials'
+);
+const sliderIndicator = document.querySelector('.carousel__indiactior');
 
 hamburgerButton.addEventListener('click', () => {
   hamburgerButton.classList.toggle('active');
   nav.classList.toggle('active');
   document.body.classList.toggle('-js-nav-is-open');
 });
+
+testimonialsItem.classList.add('active');
+
+sliderItem.classList.add('active');
+
+testimonialsIndicator.classList.add('active');
+
+sliderIndicator.classList.add('active');
 
 function initMap() {
   var location = new google.maps.LatLng(51.771543, 19.468313);
@@ -94,11 +108,3 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
-
-const testimonialsItem = document.querySelector('.carousel-item--testimonials');
-
-testimonialsItem.classList.add('active');
-
-const sliderItem = document.querySelector('.carousel-item--offer');
-
-sliderItem.classList.add('active');

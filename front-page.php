@@ -4,12 +4,18 @@
 <div class="carousel-container">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li class="carousel__indiactior active"
-        data-target="#carouselExampleCaptions"
-        data-slide-to="0"
-      ></li>
-      <li class="carousel__indiactior" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li class="carousel__indiactior" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+
+    <?php
+
+              if( have_rows('opinia', 285) ):
+                  while ( have_rows('opinia', 285) ) : the_row(); ?>
+                    <li class="carousel__indiactior" data-target="#myCarousel" data-slide-to="1"></li>
+                  <?php
+              endwhile;
+              else :
+              endif;
+
+              ?>
     </ol>
 
 
@@ -100,20 +106,22 @@
         <div class="col-md-8 col-center m-auto">
           <h2 class="testimonials__title">Opinie naszych klientów</h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
+
             <ol class="carousel-indicators carousel-indicators--testimonials">
 
-            
-              <li
-                data-target="#myCarousel"
-                data-slide-to="0"
-                class="carousel__indiactior carousel__indiactior--testimonials active"
-              ></li>
-              <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="1"></li>
-              <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="2"></li>
+              <?php
+
+              if( have_rows('opinia', 285) ):
+                  while ( have_rows('opinia', 285) ) : the_row(); ?>
+                    <li class="carousel__indiactior carousel__indiactior--testimonials" data-target="#myCarousel" data-slide-to="1"></li>
+                  <?php
+              endwhile;
+              else :
+              endif;
+
+              ?>
+
             </ol>
-
-
 
         <div class="carousel-inner">
         <?php

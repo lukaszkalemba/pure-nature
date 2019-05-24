@@ -18,7 +18,6 @@
       ?>
     </ol>
 
-
     <div class="carousel-inner">
       <?php
 
@@ -62,8 +61,6 @@
     </a>
   </div>
 </div>
-
-
 
 <section class="offer-home">
   <h2 class="offer-home__title">Oferta</h2>

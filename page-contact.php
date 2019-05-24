@@ -8,9 +8,7 @@
 
 <?php get_header(); ?>
 
-
 <div class="map"></div>
-
 
 <div class="contact-container">
   <section class="contact-section contact">

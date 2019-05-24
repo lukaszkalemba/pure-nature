@@ -59,19 +59,12 @@
           </div>
         </section>
 
-
 <?php
 endwhile;
 else :
 endif;
-
-?>
-
-    <?php
   }
-
 ?>
-
 
 
 <?php get_footer(); ?>

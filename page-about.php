@@ -25,7 +25,6 @@
 
 </section>
 
-
 <section class="employees-list">
 
   <div class="employees-container">
@@ -53,6 +52,5 @@
   </div>
 
 </section>
-
 
 <?php get_footer(); ?>

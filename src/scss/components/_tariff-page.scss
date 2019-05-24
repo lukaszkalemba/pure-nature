@@ -1,6 +1,6 @@
 .tariff {
   @include section;
-  padding-top: 18vh;
+  padding-top: 17vh;
 
   &__title {
     @include section__title;
@@ -56,7 +56,7 @@
   align-items: center;
   transition: 0.3s ease-in-out;
 
-  @media (min-width: 830px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 
@@ -70,7 +70,7 @@
     border: 1px solid $light-gray;
     padding: 0.5em 1em;
 
-    @media (min-width: 830px) {
+    @media (min-width: 768px) {
       width: auto;
       padding: 0.5em 1em;
     }
@@ -86,6 +86,11 @@
   transition: 0.3s ease-in-out;
   max-width: 960px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    padding: 2em 0;
+  }
 }
 
 .single-tariff-position {
@@ -114,7 +119,7 @@
 .nav-item {
   width: 100%;
 
-  @media (min-width: 830px) {
+  @media (min-width: 768px) {
     width: auto;
   }
 

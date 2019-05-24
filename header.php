@@ -10,7 +10,6 @@
 </head>
 <body>
 
-
   <header class="header">
     <div class="header-container">
       <a href="<?php the_permalink("285"); ?>">
@@ -22,7 +21,6 @@
       </div>
     </div>
   </header>
-
 
   <nav class="navigation">
     <?php wp_nav_menu( array(

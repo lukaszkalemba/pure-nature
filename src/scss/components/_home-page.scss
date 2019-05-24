@@ -3,9 +3,16 @@
 }
 
 .carousel__image {
-  min-height: 350px;
-  max-height: 480px;
+  height: 370px;
   object-fit: cover;
+
+  @media (min-width: 768px) {
+    height: 430px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 490px;
+  }
 }
 
 .carousel__title {

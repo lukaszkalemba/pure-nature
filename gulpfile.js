@@ -25,6 +25,7 @@ gulp.task('js', function() {
         'node_modules/popper.js/dist/umd/popper.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
         './src/js/google-maps.js',
+        './src/js/tariff.js',
         './src/js/app.js'
       ])
       .pipe(concat('index.min.js'))

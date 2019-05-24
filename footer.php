@@ -36,7 +36,7 @@
 
   <div class="footer__copyright">
     <div class="footer__copyright-container">
-      <p class="footer__paragraph">&copy; 2019 - Pure Nature</p>
+      <p class="footer__paragraph">&copy; <?php the_field('rok', 285); ?> - Pure Nature</p>
       <p class="footer__paragraph">Projekt i realizacja: <span class="footer__paragraph--lead">Bracia Konieczni</span></p>
     </div>
   </div>

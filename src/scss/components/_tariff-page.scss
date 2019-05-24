@@ -44,3 +44,81 @@
 .nav-item {
   text-align: center;
 }
+
+.tab-content {
+  display: flex;
+}
+
+.pills__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+
+  @media (min-width: 830px) {
+    flex-direction: row;
+  }
+
+  .nav-link--tab--tariff {
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    font-weight: 700;
+    color: $dark;
+    border-radius: 0;
+    border: 1px solid $light-gray;
+    padding: 0.5em 1em;
+
+    @media (min-width: 830px) {
+      width: auto;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+.pills__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.single-tariff-position {
+  justify-content: space-between;
+  display: flex;
+  transition: 0.3s ease-in-out;
+}
+
+.pills__positions {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.single-tariff-item {
+  padding: 0.4em 0;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $light-gray;
+  }
+}
+
+.nav-item {
+  width: 100%;
+
+  @media (min-width: 830px) {
+    width: auto;
+  }
+
+  a.active {
+    background-color: $gold !important;
+  }
+}

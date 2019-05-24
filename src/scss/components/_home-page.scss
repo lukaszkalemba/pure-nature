@@ -156,9 +156,5 @@
 }
 
 .carousel-item--testimonials {
-  min-height: 280px;
-
-  @media (min-width: 768px) {
-    min-height: 150px;
-  }
+  min-height: 150px;
 }
